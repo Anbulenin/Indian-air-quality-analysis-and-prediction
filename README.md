@@ -34,17 +34,6 @@ Severe
 we obtained the monthly/yearly ambient Air Quality Data from different monitoring stations across India from Indian government data website (https://data.gov.in). Details of ambient air quality with respect to air quality parameters, like Sulphur dioxide, Nitrogen dioxide, Respirable Suspended Particulate Matter (RSPM) and Suspended Particulate Matter (SPM) etc. are given in the datasets. Few of the data from the stations have been shifted/closed/during the period, are noisy. During1987-2013, SPM has been represented by PM 2.5 (PM2.5 was not being monitored during that period).
 We have designed a model to predict the air quality index of every available data points in the dataset, our model is capable of forecasting the air quality of India in any given area. By predicting the air quality index, we can backtrack the major pollution causing pollutant and the location affected seriously by the pollutant across India.
 
-
-
-
-
-Literature survey: -
-
-[1] In this paper they used K-nearest neighbour technique to predict the air quality index of a particular data, here the model was unable to predict the huge variation or it is unable to consider the global state on variations while predicting the air quality index.
-[2] In this paper they developed the model that predicts air quality concentrations using an autoregressive model, providing a predicted air quality index based on the fuzzy inference system of the air quality indexes. They achieved 80% accuracy on forecasting the aqi.
-[3] In this paper they used ARIMA model to predict the air quality index of a small data provided the accurate reading of air quality of that region. They achieved approximately 85% to 90% on predicting the aqi of upcoming week.
-[4] In this paper they used correlation matrix and neural network to predict the AQI of a particular region, here the model was unable to predict the aqi over a larger period of time because it need more data to train to predict over a larger period of time.
-
 Methodology:
 
 We acquired the dataset with various columns of sensor data from various places in India. we have the average readings of ambient air quality with respect to air quality parameters, like Sulphur dioxide (So2), Nitrogen dioxide (No2), Respirable Suspended Particulate Matter (RSPM) and Suspended Particulate Matter (SPM).Data acquired from the source has more noisy data since few of the data from the stations have been shifted/closed/during the period were marked as NAN or not available.so we have to pre-process the data in order to remove the outliers.
